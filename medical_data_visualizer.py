@@ -50,7 +50,7 @@ def draw_heat_map():
 
 
     # 14
-    fig, ax = None
+    fig, ax = plt.subplots(figsize = (12,12))
 
     # 15
 
