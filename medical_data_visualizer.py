@@ -45,7 +45,7 @@ def draw_heat_map():
     corr = df_heat.corr()
 
     # 13
-    mask = None
+    mask = np.triu(np.ones_like(corr, dtype=bool))
 
 
 
