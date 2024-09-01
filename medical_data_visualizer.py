@@ -24,11 +24,11 @@ def draw_cat_plot():
     df_cat = df_cat.rename(columns={'count':'total'})
 
     # 7
-
+    catplot = sns.catplot(df_cat, kind='bar', x='variable', y='total', hue='value', col='cardio')
 
 
     # 8
-    fig = sns.catplot(df_cat, kind='bar', x='variable', y='total', hue='value', col='cardio')
+    fig = catplot.fig
 
 
     # 9
